@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="css/styles.css">
+<title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-">
+        <div class=sidebar>
+                <img src="images/1.svg" alt="side" class="side-img">
+                <h5 class="logo"><i class="fas fa-ambulance "></i>DECAMED</h5>
+                    <div class="side-nav">
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                            <li><a href=""><i class="far fa-calendar-alt"></i>Appointments</a></li>
+                            <li><a href="patients.html"><i class="far fa-user"></i>patients</a></li>
+                            <li><a href=""><i class="fas fa-user-md"></i>Doctors</a></li>
+                            <li><a href=""><i class="fas fa-tools"></i>Settings</a></li>
+                            <li><a href=""><i class="fas fa-tools"></i>Logout</a></li>
+                        </ul>
+
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-8 new-patients" style="text-align: center;">
+                <h5>New Patients</h5>
+                    <table class="table table-striped" id="new_Patient">
+                            <thead>
+                              <tr>
+                                <th scope="col">name</th>
+                                <th scope="col">email</th>
+                                <th scope="col">Ailment</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">fees</th>
+                                <th scope="col" id="action">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody id="listPatients">
+
+                            </tbody>
+                           
+                          </table>
+                        
+            </div>
+        </div>
+        </div>
+
+<script src="js/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

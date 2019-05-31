@@ -1,0 +1,127 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color:rgb(235, 241, 241)  ;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.side-img{
+    position: absolute;
+    height: 100%;
+    margin-left:-13px;
+    top:0;
+}
+.side-nav ul{
+    position: absolute;
+list-style-type: none;
+line-height: 50px;
+font-size:12px;
+margin-top:180px;
+color:white;
+}
+.logo{
+    margin-top: 60px;
+    color:white;
+    position:absolute;
+}
+.fas,.far{
+    margin-right:10px;
+}
+.side-nav ul li a{
+    color:white;
+}
+.side-nav ul li a{
+    text-decoration: none;
+}
+.num{
+    font-size: 40px;
+}
+.doctors{
+    height: 150px;
+    width:200px;
+    background-image:linear-gradient(to left, rgba(255,255,255,0.5), rgba(253,145,81,1));
+    color:white;
+}
+.occupancy{
+    height: 150px;
+    width:200px;
+    background-image:linear-gradient(to left, rgba(255,255,255,0.5), rgba(144,201,75,1));
+    color:white;
+}
+.Patients{
+    height: 150px;
+    width:200px;
+    background-image:linear-gradient(to left, rgba(255,255,255,0.5), rgba(174,85,195,1));
+    color:white;
+}
+.modal-body{
+    color:black;
+}
+.see{
+    font-size:12px;
+}
+.list{
+    width:70%;
+    margin-left: 280px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.fa-plus-circle{
+    color: greenyellow;
+    margin-left:240px;
+    margin-top:40px;
+    font-size:30px;
+}
+.miscellaneous{
+    margin-top:20px;
+    margin-left:250px;
+    font-size:12px;
+}
+.btn-group .btn{
+    font-size:12px;
+    margin-right:10px;
+}
+.Earnings{
+        widows: 200px;
+        height: 200px;
+        /* background-color: white; */
+        margin-left:10px;
+        margin-top:0px;
+        background-image:linear-gradient(to left, rgba(255,255,255,0.5), rgb(75, 197, 201));
+        border-radius: 15px;
+        text-align: center;
+        padding-top: 30px;
+}
+.appointments{
+    widows: 200px;
+    height: 200px;
+    /* background-color: white; */
+    margin-top:-60px;
+    margin-left:943px;
+    background-image:linear-gradient(to left, rgba(255,255,255,0.5), rgb(85, 201, 75));
+    border-radius: 15px;
+    font-size: 12px;
+}
+.appointments .btn{
+    font-size: 12px;
+}
+/* .appointments h6{
+
+    margin-top: 20px;
+} */
+.Earnings p{
+    font-size:30px;
+    margin-top:40px;
+
+}
+.new-patients{
+    /* margin-right:4400px; */
+    float: right;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+.patientId{
+    margin-left: 250px;
+    margin-top: 100px;
+}

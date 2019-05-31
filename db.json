@@ -1,0 +1,83 @@
+{
+  "Patients": [
+    {
+      "id": 1,
+      "name": "First Patient",
+      "email": "firstp@gmail.com",
+      "ailment": "Cancer",
+      "status": "Receiving treatment",
+      "fees": 300000
+    },
+    {
+      "id": 2,
+      "name": "Second patient",
+      "email": "ujdshne@gmail.com",
+      "ailment": "Malaria",
+      "status": "Queued",
+      "fees": 40000
+    },
+    {
+      "name": "eqtwyt",
+      "email": "eqtwyt",
+      "ailment": "hdhjd",
+      "status": "jdjkd",
+      "fees": "2222",
+      "id": 3
+    },
+    {
+      "name": "Tolulope Ayodele",
+      "email": "pathfindersolutions18@gmail.com",
+      "ailment": "ashjakj",
+      "status": "ajhbakJ",
+      "fees": "6773484",
+      "id": 4
+    }
+  ],
+  "Admin": [
+    {
+      "Name": "Admin1",
+      "password": 12345,
+      "id": 1
+    },
+    {
+      "Name": "Admin2",
+      "password": 7890,
+      "id": 2
+    },
+    {
+      "name": "Admin3",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "Admin4",
+      "password": "5674",
+      "id": 4
+    },
+    {
+      "name": "Admin5",
+      "password": "6785",
+      "id": 5
+    },
+    {
+      "name": "Toluwalope19",
+      "password": "475885",
+      "id": 6
+    },
+    {
+      "name": "Admin5",
+      "password": "54647",
+      "id": 7
+    },
+    {
+      "name": "Admin5",
+      "password": "23465",
+      "id": 8
+    },
+    {
+      "name": "New Admin",
+      "password": "12345",
+      "id": 9
+    }
+  ]
+}

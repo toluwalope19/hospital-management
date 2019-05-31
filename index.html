@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<title>DecaMed</title>
+</head>
+<body>
+
+
+
+
+
+        <div class="container-fluid interface">
+            
+            
+            <!-- //Sidebar -->
+            <div class="row">
+                <div class=sidebar>
+                    <img src="images/1.svg" alt="side" class="side-img">
+                    <h5 class="logo"><i class="fas fa-ambulance "></i>DECAMED</h5>
+                        <div class=side-nav>
+                            <ul>
+                                <li><a href="index.html"><i class="fas fa-tachometer-alt nav-item active"></i>Dashboard</a></li>
+                                <li><a href=""><i class="far fa-calendar-alt"></i>Appointments</a></li>
+                                <li><a href="patients.html"><i class="far fa-user"></i>patients</a></li>
+                                <li><a href=""><i class="fas fa-user-md"></i>Doctors</a></li>
+                                <li><a href=""><i class="fas fa-tools"></i>Settings</a></li>
+                                <li><a href=""><i class="fas fa-tools"></i>Logout</a></li>
+                            </ul>
+
+                        </div>
+                </div>
+
+            <section class="list">
+                    <div class="row">
+                            <div class="col-lg-4 col-md-12 doctors">
+                                <h4>Doctors</h4>
+                                <i class="fas fa-user-md" style="font-size:50px"></i>
+                                
+                                    <h5> <a href=""><i class="fas fa-plus-circle"></i></a></h5>
+                            </div>
+                            <div class="col-lg-4 col-md-12 occupancy">
+                                <h4>Bed Occupancy</h4>
+                                <i class="fas fa-bed" style="font-size:50px"></i>
+
+                                
+                            </div>
+                            <div class="col-lg-4 col-md-12 Patients">
+                                <h5>Patients</h5>
+                                <i class="far fa-user" style="font-size:50px"></i>
+
+                                    <h4><a><i class="fas fa-plus-circle" type="button" data-toggle="modal" data-target="#createClient"></i></a> </h4>
+                                    <div class="modal fade" role="dialog" id="createClient">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 style="color:black">Create New Patient</h3>
+                                                    <button type="button" class="close" data-dismiss="modal">&times</button>
+
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <form method="POST" action="">
+                                                                <div class="form-row">
+                                                                  <div class="form-group col-md-6">
+                                                                    <label for="inputName4">Name</label>
+                                                                    <input type="Name" class="form-control" id="name"  placeholder="Enter patient name">
+                                                                  </div>
+                                                                  <div class="form-group col-md-6">
+                                                                    <label for="inputEmail4">Email</label>
+                                                                    <input type="email" class="form-control" id="email"  placeholder="Input patient email">
+                                                                  </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                  <label for="inputAddress">Ailment</label>
+                                                                  <input type="text" class="form-control" id="ailment"  placeholder="Ailment">
+                                                                </div>
+                                    
+        
+                                                                <div class="form-group col-md-12">
+                                                                    <label for="inputAddress">Status</label>
+                                                                    <input type="text" class="form-control" id="status"  placeholder="Queued or Receiving treatment">
+                                                                  </div>
+                                                                <div  class="form-group col-md-12">
+                                                                        <label for="inputZip">Fees</label>
+                                                                        <input type="text" class="form-control" id="fees"  placeholder="Amount to be paid">
+                                                                </div>
+
+                                                                    </div>
+                                                                    
+                                                                    <button type="submit" id="submit" class="btn btn-success">Register patient</button>
+                                                                    </div>
+                                                                </form>
+                                                                
+                                                                
+                                                        <div class="modal-footer">
+                                                                
+                                                        </div>
+                                                                
+                                                         
+
+                                                    
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                
+                            </div>
+                     </div>
+            </section>
+            </div>  
+            <section class="miscellaneous">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5>New Patients</h5>
+                            <table class="table table-striped" id="new_Patient">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">name</th>
+                                        <th scope="col">email</th>
+                                        <th scope="col">Ailment</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">fees</th>
+                                        <th scope="col" id="action">Action</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="listPatients">
+
+                                    </tbody>
+                                   
+                                  </table>
+                                  
+                    </div>
+                    <div class="Earnings col-lg-3">
+                            <h6>Todays Earnings</h6>
+                            <p class="num">#13,000,000</p>
+
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class=" appointments col-lg-3">
+                    <h6>Appointments</h6>
+                        <table class="table table-sm">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Doctor</th>
+                                    <th scope="col">Time</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+                              <button type="button" class="btn btn-success"><i class="fas fa-plus"></i>Add</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+<script src="js/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
